@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hell yeah</title>
+<style>
+:root {
+  --green: rgb(174, 210, 157);
+  --yellow: rgb(235, 234, 134);
+  --blue: rgb(196, 198, 237);
+  --purple: rgb(185, 157, 230);
+  --red: rgb(208, 94, 89);
+}
+body {
+  font-size: 20px;
+  font-family: Sans-Serif;
+  padding: 2rem;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(112deg, yellow, green);
+}
+header {
+  max-width: 60ch;
+  margin: 0 auto;
+}
+main {
+  max-width: 60ch;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  font-family: fantasy;
+  background-color: #f1694a;
+  background: linear-gradient(90deg, #f1694a, #ef5532);
+  border: 2px solid #1d184b;
+  border-radius: 50px;
+  margin: 1rem 0;
+  padding: 1rem 0.5rem;
+  transform: translate3d(2px, -3px, 0px) scale3d(1.005, 1.005, 1); 
+  box-shadow: 0 2px 8px 3px rgba(0,0,0,0.1);
+
+}
+button:hover {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); 
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <audio id="a" src="media/hellyeah.ogg"></audio>
+  <audio id="b" src="media/elllyeah.ogg"></audio>
+  <audio id="c" src="media/hellyeahbatman.ogg"></audio>
+  <audio id="d" src="media/elllyeahbatman.ogg"></audio>
+  <audio id="e" src="media/hyellyeahbatman.ogg"></audio>
+  <header>
+    <h1>hell yeah batman</h1>
+  </header>
+  <main>
+    <button onClick="document.getElementById('a').play()">Hell Yeah</button>
+    <button onClick="document.getElementById('b').play()">hELL YEeh</button>
+    <button onClick="document.getElementById('c').play()">Hell yeah batman</button>
+    <button onClick="document.getElementById('d').play()">hYEll yeah batman</button>
+    <button onClick="document.getElementById('e').play()">HYELL yeah batman</button>
+  </main>
+</body>
+</html>
